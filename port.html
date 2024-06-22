@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.header-content {
+  margin-top: 50px;
+}
+
+.header-content h1 {
+  font-size: 48px;
+}
+
+.header-content p {
+  font-size: 24px;
+  margin: 10px 0 20px;
+}
+
+.header-content .btn {
+  background: #61dafb;
+  color: #282c34;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background: #61dafb;
+  color: #282c34;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  flex: 1 1 calc(33% - 10px);
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1 1 calc(33% - 20px);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #282c34;
+  font-size: 24px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-container, .project-container {
+    flex-direction: column;
+  }
+
+  .skill, .project {
+    flex: 1 1 100%;
+  }
+}
+
+</style>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Portfolio</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1>Hi, I'm Atul Raj</h1>
+      <p>A Passionate  Web Developer!</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>🎓I am a Student of Computer Science graduating from Thapar University.🎓
+<br>
+        Driven by a passion ✨ for crafting efficient and scalable solutions, I've honed my skills in web development 👩🏻‍💻 and have a proven track record of delivering high-quality projects.
+        <br> <br>
+        <b>My expertise encompasses:</b> 
+        <br> <br>
+        •  <b>🌐 Front-End Technologies :</b> HTML5, CSS, JavaScript (DSA). <br> 
+        • <b>🗄️ Back-End Technologies:</b> SQL, MongoDB, JSON, Node.js . <br>
+        • <b>⚛️ Frontend Frameworks:</b> React.js.
+        <br> <br>
+        <i>Now, I'm eager to embark on the next chapter! 🚀</i> 
+        <br> <br>
+        I'm actively seeking 💼 <b>internship opportunities</b> to:
+        <br> <br>
+        • 💻 Apply my technical skills in a dynamic team environment. <br>
+        • 🛠️ Contribute to meaningful projects and solutions. <br>
+        • 📈 Grow as a software engineer and learn from experienced professionals.
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill"> HTML5 </div>
+        <div class="skill"> SQL </div>
+        <div class="skill"> CSS </div>
+        <div class="skill"> MongoDB </div>
+        <div class="skill"> JavaScript (DSA) </div>
+        <div class="skill"> JSON </div>
+        <div class="skill"> React.js </div>
+        <div class="skill"> Node.js </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <div class="project">
+          <h3>Project Title 1</h3>
+          <p>Brief description of the project.</p>
+        </div>
+        <div class="project">
+          <h3>Project Title 2</h3>
+          <p>Brief description of the project.</p>
+        </div>
+        <div class="project">
+          <h3>Project Title 3</h3>
+          <p>Brief description of the project.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me via email at <a href="mailto:atulraj7726@gmail.com">atulraj7726@gmail.com</a> or follow me on social media:</p>
+      <div class="social-links">
+        <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+        <a href="https://www.linkedin.com/in/atul-raj7726"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/AtulRaj1"><i class="fab fa-github"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Atul Raj</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
